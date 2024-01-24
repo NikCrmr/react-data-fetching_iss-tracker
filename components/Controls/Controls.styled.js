@@ -18,7 +18,10 @@ export const ControlsButton = styled.button`
 
 export const ControlsDisplay = styled.output`
   box-shadow: 0 0 0 1px rgb(209, 206, 206, 0.5);
-  color: #ddd;
+  color: yellow;
+  font-size: larger;
+  font-weight: 400;
+  letter-spacing: 0.1em;
   padding: 5px 8px;
   border-radius: 4px;
 `;

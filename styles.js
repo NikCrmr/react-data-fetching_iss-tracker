@@ -14,7 +14,7 @@ export default createGlobalStyle`
 
   main {
   padding: 20px;
-  background-color: #284048;
+  background-color: #99CCFF;
   min-height: 100vh;
 }
 `;

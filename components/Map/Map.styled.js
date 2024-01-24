@@ -18,7 +18,7 @@ export const MapImage = styled(Image)`
 const blink = keyframes`
     0% {
       border-width: 0px;
-      border-color: rgba(245, 63, 63, 1);
+      border-color: rgba(255, 40, 216, 1);
     }
   
     100% {
@@ -35,9 +35,9 @@ export const MapISS = styled.div`
   width: 10px;
   height: 10px;
   border-radius: 999px;
-  background-color: rgb(255, 36, 84);
+  background-color: rgb(231, 255, 15);
   background-clip: padding-box;
   border: solid;
   transform: translate(-50%, -50%);
-  animation: ${blink} 1.5s infinite ease-out;
+  animation: ${blink} 1.3s infinite ease-out;
 `;

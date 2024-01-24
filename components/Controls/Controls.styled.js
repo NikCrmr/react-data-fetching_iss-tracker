@@ -14,6 +14,8 @@ export const ControlsButton = styled.button`
   border-radius: 4px;
   padding: 5px 8px;
   font-size: 1rem;
+  background-color: royalblue;
+  color: white;
 `;
 
 export const ControlsDisplay = styled.output`

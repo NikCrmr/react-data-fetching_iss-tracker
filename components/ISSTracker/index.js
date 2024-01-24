@@ -7,15 +7,22 @@ const URL = "https://api.wheretheiss.at/v1/satellites/25544";
 const fetcher = (...args) => fetch(...args).then((res) => res.json());
 
 export default function ISSTracker() {
-  const { data, error, isLoading } = useSWR(URL, fetcher);
+  const { data: coords, error, isLoading } = useSWR(URL, fetcher);
+  console.log(coords);
+  if (isLoading) {
+    return <p>is Loading</p>;
+  }
+  if (error) {
+    return <p>Error</p>;
+  }
 
   // render data
   return (
     <main>
-      <Map longitude={data.coords.longitude} latitude={coords.latitude} />
+      <Map longitude={coords.longitude} latitude={coords.latitude} />
       <Controls
-        longitude={data.coords.longitude}
-        latitude={data.coords.latitude}
+        longitude={coords.longitude}
+        latitude={coords.latitude}
         //onRefresh={getISSCoords}
       />
     </main>
